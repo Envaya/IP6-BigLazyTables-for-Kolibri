@@ -1,0 +1,88 @@
+:root {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i {
+    cursor: pointer;
+    align-content: center;
+}
+
+#table-header th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+    background-color: #d7d9f2;
+    width: 115px;
+
+}
+
+#table-header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: larger;
+    border-bottom: 1px solid gray;
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+
+#scroller {
+    overflow: scroll;
+    height: 450px;
+    width: 700px;
+    border: 1px solid black;
+}
+
+#scroller table, #scroller div{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    border-bottom: 1px solid gray;
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+
+#scroller td {
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border-right: 1px solid rgb(190, 190, 190);
+}
+
+#scroller div#prefill {
+    height: 0;
+}
+#scroller div#postfill {
+    /*as large as the whole data set minus scroller height*/
+    height: 30000000px;
+}
+
+#output {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-size: larger;
+}
+
+#filter-container{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 5px;
+}
+

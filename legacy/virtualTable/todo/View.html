@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Table Test</title>
+    <link rel="stylesheet" href="../table.css">
+</head>
+<body>
+
+<main style="padding-top: 10rem;">
+    <div class="inlay">
+        <div>
+            <button id="plus" autofocus>Add Row</button>
+            <button id="fortune"> fortune!</button>
+        </div>
+        <table class="customers">
+            <tr>
+                <th>Name</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+        <div class="table-container" id="table-container">
+            <table id="tableContainer" class="customers">
+            </table>
+        </div>
+        <div style="margin-top: 3rem;">
+            <div>Rows: <span id="numberOfRows">0</span></div>
+            <div>Open: <span id="openRows">0</span></div>
+        </div>
+    </div>
+</main>
+
+<script src="tableStarter.js" type="module"></script>
+
+</body>

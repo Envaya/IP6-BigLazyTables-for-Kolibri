@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, #content {
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.customers td, .customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.customers tr:hover {
+    background-color: #ddd;
+}
+
+.customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+.inlay {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2.5rem 0 2.5rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+@media only screen and (min-width: 1265px) {
+    .inlay {
+        max-width: 1200px;
+    }
+}
+
+.table-container {
+    max-height: 393px;
+    overflow-y: scroll;
+}
+
+.scroll-container {
+    height: 1000000px;
+}
+
+.table-container tr {
+    /*display: none;*/
+}
+
+div {
+    --scrollbarBG: #111111;
+    --thumbBG: #3477eb;
+}
+
+.table-container::-webkit-scrollbar {
+    width: 11px;
+}
+.table-container {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+.table-container::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+.row-13 {
+    background: red;
+}

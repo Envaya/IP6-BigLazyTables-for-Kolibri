@@ -1,0 +1,178 @@
+:root {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(129, 108, 241, 0.6);
+    font-family: "Poppins Regular", "Segoe UI", Arial, fallback, sans-serif;
+    color: white;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins Regular", "Segoe UI", Arial, fallback, sans-serif;
+    font-size: 3em;
+    color: white;
+}
+
+.table{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    background: rgb(129, 108, 241);
+    width: 1626px;
+}
+
+#table-headers{
+    display: flex;
+    font-size: larger;
+    border-bottom: 1px solid gray;
+    letter-spacing: 1px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#table-headers th {
+    height: 40px;
+    width: 100%;
+    min-width: 271px;
+    background: #2d1fb1;
+    padding-top: 10px;
+}
+
+#horizontal-scroller {
+    overflow-x: auto;
+}
+
+#scroller {
+    height: 480px;
+    min-width: max-content;
+    overflow-y: auto;
+}
+
+#scroller table, #scroller div{
+    height: 60px;
+    width: 100%;
+    border-collapse: collapse;
+    letter-spacing: 1px;
+}
+
+
+#scroller table:hover {
+     background-color: rgba(255, 255, 255, 0.07);
+}
+
+
+#scroller td {
+    padding-left: 10px;
+    font-size: 18px;
+    min-width: 260px;
+}
+
+#scroller td:hover {
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+#scroller td:focus {
+    background: rgba(0, 0, 0, 0.61);
+}
+
+#scroller div#prefill {
+    height: 0;
+}
+#scroller div#postfill {
+    /*as large as the whole data set minus scroller height*/
+    height: 6000px;
+}
+
+#output {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    color: white;
+    font-size: larger;
+}
+
+.sort-by-asc
+{
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 0 3px;
+    background: transparent;
+    border-bottom: solid 7px #ffffff;
+    border-top-width: 0;
+    cursor: pointer;
+}
+
+.sort-by-desc
+{
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 0 3px;
+    background: transparent;
+    border-top: solid 7px #ffffff;
+    border-bottom-width: 0;
+    cursor: pointer;
+}
+
+#filters{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    height: 35px;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+}
+
+.filterInputField {
+    width: 100%;
+    min-width: 263px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.61);
+    color: white;
+}
+
+#scroller::-webkit-scrollbar{
+    width: 12px;
+    height: 12px;
+}
+#scroller::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+#scroller::-webkit-scrollbar-thumb{
+    background: rgba(222, 70, 188, 0.47);
+    border-radius: 10px;
+    -webkit-box-shadow: rgba(0,0,0,.12) 0 3px 13px 1px;
+}
+
+#horizontal-scroller::-webkit-scrollbar{
+    width: 12px;
+    height: 12px;
+}
+#horizontal-scroller::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+#horizontal-scroller::-webkit-scrollbar-thumb{
+    background: rgba(222, 70, 188, 0.47);
+    border-radius: 10px;
+    -webkit-box-shadow: rgba(0,0,0,.12) 0 3px 13px 1px;
+}
+
+#columnNumberInputField {
+    width: 250px;
+    height: 30px;
+    font-size: 1.2em;
+}

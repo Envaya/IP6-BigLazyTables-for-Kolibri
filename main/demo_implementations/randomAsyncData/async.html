@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name = "viewport" content = "user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="../style.css">
+    <script src="asyncStarter.js" type="module"></script>
+    <link rel="shortcut icon" type="image/png" href="../../img/logo/logo-60x54.png">
+    <title>Big Lazy Tables</title>
+</head>
+<body>
+    <main class="inlay">
+        <div class='loading-wrapper'>
+            <h2>loading...</h2>
+        </div>
+        <h1>Asynchronously loaded, randomized data</h1>
+        <div class="controls">
+            <h2>Controls</h2>
+            <div id="input-box"></div>
+        </div>
+        <div id="table"></div>
+        <pre id="output"></pre>
+    </main>
+    <script>
+        //loading
+        const loadingWrapper = document.querySelector('.loading-wrapper');
+
+        window.addEventListener('load', _ => {
+            loadingWrapper.parentElement.removeChild(loadingWrapper);
+        });
+    </script>
+</body>
+</html>
